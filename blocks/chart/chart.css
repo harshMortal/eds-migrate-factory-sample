@@ -1,0 +1,20 @@
+/* blocks/chart/chart.css */
+.chart {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.chart img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.chart .caption {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
