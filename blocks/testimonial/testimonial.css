@@ -14,12 +14,14 @@
   padding: 60px;
   border-radius: 12px;
   color: white;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 20%);
 }
 
 .testimonial-image img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 30%);
 }
 
 blockquote {
@@ -28,27 +30,31 @@ blockquote {
   font-style: italic;
   margin-bottom: 24px;
   position: relative;
+  padding-left: 30px;
 }
 
 blockquote::before {
   content: '"';
   font-size: 72px;
   position: absolute;
-  left: -20px;
-  top: -10px;
+  left: -10px;
+  top: -20px;
   color: #ff6b35;
+  font-family: serif;
 }
 
 .author {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: #ff6b35;
 }
 
 .subtitle {
   font-size: 14px;
   color: #ccc;
   margin-bottom: 16px;
+  font-style: italic;
 }
 
 .disclaimer {
@@ -57,16 +63,24 @@ blockquote::before {
   margin-top: 24px;
   padding-top: 16px;
   border-top: 1px solid rgb(255 255 255 / 20%);
+  line-height: 1.5;
 }
 
 @media (width < 768px) {
   .testimonial > div {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding: 30px 20px;
+    padding: 40px 20px;
   }
 
   blockquote {
     font-size: 18px;
+    padding-left: 20px;
+  }
+
+  blockquote::before {
+    font-size: 48px;
+    left: 0;
+    top: -10px;
   }
 }
