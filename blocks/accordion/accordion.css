@@ -64,7 +64,7 @@
   padding: 24px;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .accordion-icon img {
     width: 40px;
     height: 40px;
