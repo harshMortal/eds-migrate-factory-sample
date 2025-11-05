@@ -1,0 +1,49 @@
+/* blocks/data-table/data-table.css */
+.data-table {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.data-table th {
+  background: #ff6b35;
+  color: white;
+  padding: 16px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.data-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background: #f8f8f8;
+}
+
+@media (width < 768px) {
+  .data-table {
+    overflow-x: scroll;
+  }
+
+  .data-table table {
+    min-width: 600px;
+  }
+}
