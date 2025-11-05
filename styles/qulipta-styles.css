@@ -1,4 +1,5 @@
 /* File: styles/qulipta-styles.css */
+
 /* Qulipta Brand Styles for EDS */
 
 :root {
@@ -16,8 +17,8 @@
   --color-border: #e0e0e0;
   
   /* Fonts */
-  --font-primary: 'Expressway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-primary: 'Expressway', 'Helvetica Neue', helvetica, arial, sans-serif;
+  --font-body: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 /* Global Resets */
@@ -124,7 +125,7 @@ h4 {
   padding: 80px 20px;
 }
 
-.section--spaced {
+.section-spaced {
   padding: 120px 20px;
 }
 
@@ -211,7 +212,7 @@ h4 {
   display: inline;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .hide-mobile {
     display: none;
   }
@@ -232,7 +233,7 @@ h4 {
     padding: 60px 20px;
   }
   
-  .section--spaced {
+  .section-spaced {
     padding: 80px 20px;
   }
 }
