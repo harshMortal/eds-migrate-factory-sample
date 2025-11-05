@@ -69,11 +69,11 @@
     width: 40px;
     height: 40px;
   }
-  
+
   .accordion-title {
     font-size: 16px;
   }
-  
+
   .accordion > div > div:first-child {
     padding: 16px;
   }
