@@ -1,6 +1,6 @@
 /* blocks/chart/chart.css */
 .chart {
-  max-width: 800px;
+  max-width: 900px;
   margin: 60px auto;
   padding: 0 20px;
   text-align: center;
@@ -10,6 +10,7 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
 }
 
 .chart .caption {
@@ -17,4 +18,10 @@
   font-size: 14px;
   color: #666;
   font-style: italic;
+}
+
+@media (width < 768px) {
+  .chart {
+    margin: 40px auto;
+  }
 }
