@@ -16,18 +16,24 @@
 }
 
 .data-table th {
-  background: #ff6b35;
+  background: #2c5f7c;
   color: white;
   padding: 16px;
   text-align: left;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .data-table td {
   padding: 16px;
   border-bottom: 1px solid #e0e0e0;
   font-size: 14px;
+  color: #333;
+}
+
+.data-table tbody tr:nth-child(odd) {
+  background: #f8f8f8;
 }
 
 .data-table tbody tr:last-child td {
@@ -35,7 +41,7 @@
 }
 
 .data-table tbody tr:hover {
-  background: #f8f8f8;
+  background: #fff3ef;
 }
 
 @media (width < 768px) {
@@ -45,5 +51,11 @@
 
   .data-table table {
     min-width: 600px;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 12px 8px;
+    font-size: 12px;
   }
 }
