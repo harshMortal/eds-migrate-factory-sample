@@ -1,0 +1,284 @@
+/* File: styles/qulipta-styles.css */
+/* Qulipta Brand Styles for EDS */
+
+:root {
+  /* Qulipta Brand Colors */
+  --color-primary: #ff6b35;
+  --color-secondary: #2c5f7c;
+  --color-tertiary: #1a3a4d;
+  --color-limed-spruce: #3a4d3f;
+  --color-orange: #ff6b35;
+  
+  /* Grays */
+  --color-dark: #333;
+  --color-text: #666;
+  --color-light-bg: #f8f8f8;
+  --color-border: #e0e0e0;
+  
+  /* Fonts */
+  --font-primary: 'Expressway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+main {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.h4 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* Brand-specific text colors */
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--color-tertiary) !important;
+}
+
+.qulipta-text-orange {
+  color: var(--color-orange) !important;
+}
+
+.qulipta-text-limed-spruce {
+  color: var(--color-limed-spruce) !important;
+}
+
+/* Font weights */
+.ff-expressway-bold {
+  font-weight: 700;
+}
+
+.ff-expressway-extra-bold {
+  font-weight: 800;
+}
+
+/* Containers */
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-medium {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+}
+
+.section--spaced {
+  padding: 120px 20px;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Background variations */
+.container-light {
+  background: var(--color-light-bg);
+}
+
+.container-dark {
+  background: var(--color-tertiary);
+  color: white;
+}
+
+.container-gradient {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
+  color: white;
+}
+
+/* Buttons */
+.cta-primary,
+.abbv-button-primary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-primary:hover {
+  background: #e55a28;
+  transform: translateY(-2px);
+}
+
+.cta-secondary,
+.abbv-button-secondary {
+  display: inline-block;
+  padding: 14px 32px;
+  background: transparent;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta-secondary:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+/* Spacing utilities */
+.spacer-bottom-small {
+  margin-bottom: 20px !important;
+}
+
+.spacer-bottom-xsmall {
+  margin-bottom: 10px !important;
+}
+
+.no-bottom-space {
+  margin-bottom: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Mobile utilities */
+.hide-mobile {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .section--spaced {
+    padding: 80px 20px;
+  }
+}
+
+/* Migraine Mode (Dark Theme Toggle) */
+body.migraine-mode {
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.migraine-mode h1,
+body.migraine-mode h2,
+body.migraine-mode h3,
+body.migraine-mode h4 {
+  color: #fff;
+}
+
+body.migraine-mode .container-light {
+  background: #2a2a2a;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #e55a28;
+  text-decoration: underline;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive images with picture element */
+picture {
+  display: block;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+}
