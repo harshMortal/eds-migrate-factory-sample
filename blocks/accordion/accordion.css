@@ -10,11 +10,11 @@
   border-radius: 8px;
   margin-bottom: 16px;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   background: white;
 }
 
-.accordion > div > div:first-child {
+.accordion-header {
   display: flex;
   align-items: center;
   padding: 24px;
@@ -22,10 +22,15 @@
   background: #f8f8f8;
   position: relative;
   gap: 16px;
+  transition: background 0.2s ease;
 }
 
-.accordion > div > div:first-child:hover {
+.accordion-header:hover {
   background: #efefef;
+}
+
+.accordion-icon {
+  flex-shrink: 0;
 }
 
 .accordion-icon img {
@@ -41,16 +46,21 @@
   color: #333;
 }
 
-.accordion > div > div:first-child::after {
-  content: '+';
+.accordion-toggle {
   font-size: 32px;
   font-weight: bold;
   color: #ff6b35;
-  transition: transform 0.3s;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
-.accordion > div.active > div:first-child::after {
-  content: '−';
+.accordion > div.active .accordion-toggle {
+  transform: rotate(45deg);
 }
 
 .accordion-content {
@@ -62,8 +72,12 @@
 }
 
 .accordion > div.active .accordion-content {
-  max-height: 1000px;
+  max-height: 2000px;
   padding: 0 24px 24px 100px;
+}
+
+.accordion-body {
+  padding-top: 0;
 }
 
 .accordion .qulipta-text-orange {
@@ -86,7 +100,7 @@
     font-size: 16px;
   }
 
-  .accordion > div > div:first-child {
+  .accordion-header {
     padding: 16px;
   }
 
