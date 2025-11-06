@@ -23,6 +23,28 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.data-table th:hover {
+  background: #1a3a4d;
+}
+
+.data-table th.sortable::after {
+  content: ' ↕';
+  opacity: 0.5;
+}
+
+.data-table th.sorted-asc::after {
+  content: ' ↑';
+  opacity: 1;
+}
+
+.data-table th.sorted-desc::after {
+  content: ' ↓';
+  opacity: 1;
 }
 
 .data-table td {
