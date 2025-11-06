@@ -15,7 +15,7 @@ export default function decorate(block) {
         // Close all
         children.forEach((child) => child.classList.remove('active'));
 
-        // Open clicked if it wasn't active
+        // Open clicked if wasn't active
         if (!isActive) {
           header.classList.add('active');
           content.classList.add('active');
