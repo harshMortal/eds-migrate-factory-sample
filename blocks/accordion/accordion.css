@@ -1,112 +1,63 @@
 /* blocks/accordion/accordion.css */
-.accordion {
+.accordion > div {
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-.accordion > div {
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-  background: white;
-}
-
-.accordion-header {
+.accordion > div > div:nth-child(odd) {
   display: flex;
   align-items: center;
-  padding: 24px;
-  cursor: pointer;
-  background: #f8f8f8;
-  position: relative;
   gap: 16px;
-  transition: background 0.2s ease;
+  padding: 24px;
+  background: #f8f8f8;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  position: relative;
 }
 
-.accordion-header:hover {
-  background: #efefef;
-}
-
-.accordion-icon {
-  flex-shrink: 0;
-}
-
-.accordion-icon img {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-}
-
-.accordion-title {
-  flex: 1;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-}
-
-.accordion-toggle {
+.accordion > div > div:nth-child(odd)::after {
+  content: '+';
+  position: absolute;
+  right: 24px;
   font-size: 32px;
   font-weight: bold;
   color: #ff6b35;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
+  transition: transform 0.3s;
 }
 
-.accordion > div.active .accordion-toggle {
-  transform: rotate(45deg);
+.accordion > div > div:nth-child(odd).active::after {
+  content: '−';
+  transform: rotate(180deg);
 }
 
-.accordion-content {
+.accordion > div > div:nth-child(odd) img {
+  width: 60px;
+  height: 60px;
+}
+
+.accordion > div > div:nth-child(odd) strong {
+  font-size: 20px;
+  color: #333;
+}
+
+.accordion > div > div:nth-child(even) {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
-  padding: 0 24px 0 100px;
-  background: white;
+  padding: 0 24px;
+  border: 2px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
-.accordion > div.active .accordion-content {
-  max-height: 2000px;
-  padding: 0 24px 24px 100px;
-}
-
-.accordion-body {
-  padding-top: 0;
-}
-
-.accordion .qulipta-text-orange {
-  color: #ff6b35;
-  font-weight: bold;
-}
-
-.accordion .qulipta-text-limed-spruce {
-  color: #3a4d3f;
-  font-weight: bold;
+.accordion > div > div:nth-child(even).active {
+  max-height: 500px;
+  padding: 24px;
 }
 
 @media (width < 768px) {
-  .accordion-icon img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .accordion-title {
-    font-size: 16px;
-  }
-
-  .accordion-header {
-    padding: 16px;
-  }
-
-  .accordion-content,
-  .accordion > div.active .accordion-content {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  .accordion > div > div:nth-child(odd) { padding: 16px; }
+  .accordion > div > div:nth-child(odd) img { width: 40px; height: 40px; }
 }
