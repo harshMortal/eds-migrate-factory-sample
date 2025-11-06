@@ -26,6 +26,11 @@
   font-size: 16px;
   line-height: 1.6;
   color: #666;
+  margin-bottom: 12px;
+}
+
+.two-column-grid p:last-child {
+  margin-bottom: 0;
 }
 
 @media (width < 768px) {
