@@ -1,6 +1,8 @@
 export default function decorate(block) {
-  const bgImage = block.dataset.backgroundImage;
-  if (bgImage) {
-    block.style.backgroundImage = `url(${bgImage})`;
+  const bgData = block.querySelector('[data-bg]');
+  if (bgData) {
+    const bgUrl = bgData.dataset.bg;
+    block.style.backgroundImage = `url(${bgUrl})`;
+    bgData.style.display = 'none';
   }
 }
