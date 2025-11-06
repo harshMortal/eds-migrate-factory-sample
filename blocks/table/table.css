@@ -1,0 +1,70 @@
+/* blocks/table/table.css */
+.table {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #2c5f7c;
+  color: white;
+  padding: 16px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.table th:hover {
+  background: #1a3a4d;
+}
+
+.table th.sortable::after {
+  content: ' ↕';
+  opacity: 0.5;
+}
+
+.table th.sorted-asc::after {
+  content: ' ↑';
+  opacity: 1;
+}
+
+.table th.sorted-desc::after {
+  content: ' ↓';
+  opacity: 1;
+}
+
+.table td {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+.table tbody tr:hover {
+  background: #fff3ef;
+}
+
+.table th:nth-child(3),
+.table td:nth-child(3) {
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+@media (width < 768px) {
+  .table { overflow-x: scroll; }
+  .table table { min-width: 600px; }
+}
