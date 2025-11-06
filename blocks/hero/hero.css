@@ -5,47 +5,26 @@
   background: linear-gradient(135deg, #2c5f7c 0%, #1a3a4d 100%);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   min-height: 500px;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
-}
-
-.hero > div {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .hero h1 {
   color: #fff;
   font-size: 48px;
-  line-height: 1.2;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: expressway, 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 
 .hero .h4 {
   color: #ff6b35;
   font-size: 24px;
-  line-height: 1.4;
   font-weight: bold;
 }
 
 @media (width < 768px) {
-  .hero {
-    padding: 80px 20px 60px;
-    min-height: 400px;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero .h4 {
-    font-size: 18px;
-  }
+  .hero { padding: 80px 20px; min-height: 400px; }
+  .hero h1 { font-size: 32px; }
 }
