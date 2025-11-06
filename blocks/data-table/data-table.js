@@ -35,7 +35,7 @@ export default function decorate(block) {
         const cellA = rowA.cells[columnIndex].textContent.trim();
         const cellB = rowB.cells[columnIndex].textContent.trim();
 
-        // Try to parse as numbers first
+        // Try to parse as numbers first (handles percentages too)
         const numA = parseFloat(cellA.replace(/[^0-9.-]/g, ''));
         const numB = parseFloat(cellB.replace(/[^0-9.-]/g, ''));
 
