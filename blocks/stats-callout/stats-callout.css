@@ -16,9 +16,13 @@
   color: white;
 }
 
-.stats-callout img {
+.stats-image img {
   max-width: 200px;
   height: auto;
+}
+
+.stats-content {
+  flex: 1;
 }
 
 .stats-callout .stat {
@@ -43,7 +47,7 @@
     padding: 40px 24px;
   }
 
-  .stats-callout img {
+  .stats-image img {
     max-width: 150px;
   }
 
