@@ -1,26 +1,30 @@
 /* blocks/cards/cards.css */
+.cards {
+  background: linear-gradient(135deg, #2c5f7c 0%, #1a3a4d 100%);
+  padding: 60px 20px;
+}
+
 .cards > div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
   max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .cards > div > div {
   background: white;
   padding: 40px 32px;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 15%);
   text-align: center;
   border-top: 4px solid #ff6b35;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cards > div > div:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
 }
 
 .cards img {
@@ -34,6 +38,7 @@
   color: #2c5f7c;
   margin: 16px 0;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .cards a {
