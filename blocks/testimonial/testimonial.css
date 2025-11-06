@@ -1,4 +1,9 @@
 /* blocks/testimonial/testimonial.css */
+.testimonial {
+  background: #f5f5f5;
+  padding: 60px 20px;
+}
+
 .testimonial > div {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -9,19 +14,21 @@
   border-radius: 12px;
   color: white;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 0 auto;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 20%);
 }
 
 .testimonial img {
   width: 100%;
   border-radius: 8px;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
 }
 
 .testimonial blockquote {
   font-size: 24px;
   line-height: 1.5;
   font-style: italic;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   position: relative;
   padding-left: 30px;
 }
@@ -33,6 +40,7 @@
   left: -10px;
   top: -20px;
   color: #ff6b35;
+  font-family: serif;
 }
 
 .testimonial strong {
@@ -54,6 +62,13 @@
 }
 
 @media (width < 768px) {
-  .testimonial > div { grid-template-columns: 1fr; gap: 30px; padding: 40px 20px; }
-  .testimonial blockquote { font-size: 18px; }
+  .testimonial > div {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .testimonial blockquote {
+    font-size: 18px;
+  }
 }
