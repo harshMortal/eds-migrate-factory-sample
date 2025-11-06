@@ -6,6 +6,14 @@
   text-align: center;
 }
 
+.chart h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5f7c;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
 .chart img {
   width: 100%;
   height: auto;
@@ -23,5 +31,9 @@
 @media (width < 768px) {
   .chart {
     margin: 40px auto;
+  }
+
+  .chart h2 {
+    font-size: 22px;
   }
 }
