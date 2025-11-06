@@ -1,4 +1,9 @@
 /* blocks/stats/stats.css */
+.stats {
+  background: white;
+  padding: 60px 20px;
+}
+
 .stats > div {
   display: flex;
   align-items: center;
@@ -8,11 +13,12 @@
   border-radius: 12px;
   color: white;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 0 auto;
+  box-shadow: 0 8px 30px rgb(255 107 53 / 30%);
 }
 
 .stats img {
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
 }
 
@@ -22,16 +28,30 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .stats p:last-child {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1.3;
+  margin: 0;
 }
 
 @media (width < 768px) {
-  .stats > div { flex-direction: column; padding: 40px 24px; }
-  .stats img { max-width: 150px; }
-  .stats strong, .stats p:last-child { font-size: 20px; }
+  .stats > div {
+    flex-direction: column;
+    padding: 40px 24px;
+    text-align: center;
+  }
+
+  .stats img {
+    max-width: 150px;
+  }
+
+  .stats strong,
+  .stats p:last-child {
+    font-size: 20px;
+  }
 }
