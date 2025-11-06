@@ -1,8 +1,12 @@
 /* blocks/chart/chart.css */
 .chart {
+  background: white;
+  padding: 60px 20px;
+}
+
+.chart > div {
   max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -10,7 +14,7 @@
   font-size: 28px;
   font-weight: bold;
   color: #2c5f7c;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
   text-transform: uppercase;
 }
 
