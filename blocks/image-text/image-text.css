@@ -1,0 +1,37 @@
+/* blocks/image-text/image-text.css */
+.image-text > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.image-text img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+
+.image-text h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c5f7c;
+  margin-bottom: 16px;
+}
+
+.image-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (width < 768px) {
+  .image-text > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
