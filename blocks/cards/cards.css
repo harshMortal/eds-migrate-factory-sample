@@ -1,27 +1,53 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* blocks/cards/cards.css */
+.cards > div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+.cards > div > div {
+  background: white;
+  padding: 40px 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  text-align: center;
+  border-top: 4px solid #ff6b35;
+  transition: transform 0.3s;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards > div > div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 15%);
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards img {
+  width: 80px;
+  height: 80px;
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.cards h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c5f7c;
+  margin: 16px 0;
+  text-transform: uppercase;
+}
+
+.cards a {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #ff6b35;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.cards a:hover {
+  background: #e55a28;
 }
