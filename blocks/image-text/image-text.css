@@ -1,12 +1,16 @@
 /* blocks/image-text/image-text.css */
+.image-text {
+  background: white;
+  padding: 60px 20px;
+}
+
 .image-text > div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 520px auto;
+  gap: 60px;
   align-items: center;
   max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .image-text img {
@@ -16,17 +20,28 @@
   box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
 }
 
-.image-text h3 {
-  font-size: 28px;
+.image-text h2 {
+  font-size: 32px;
   font-weight: bold;
   color: #2c5f7c;
-  margin-bottom: 16px;
+  margin: 0 0 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.image-text h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6b35;
+  margin: 16px 0 0;
+  text-transform: uppercase;
 }
 
 .image-text p {
   font-size: 16px;
   line-height: 1.6;
   color: #666;
+  margin: 0;
 }
 
 @media (width < 768px) {
