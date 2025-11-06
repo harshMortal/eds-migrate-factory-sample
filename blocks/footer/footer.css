@@ -1,20 +1,78 @@
+/* blocks/footer/footer.css */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background: linear-gradient(135deg, #2c5f7c 0%, #1a3a4d 100%);
+  color: white;
+  padding: 60px 20px 20px;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer > div {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-footer .footer p {
-  margin: 0;
+footer > div:first-child {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+footer strong {
+  font-size: 16px;
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+footer p {
+  margin: 0 0 12px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #999;
+}
+
+footer > div:last-child a {
+  color: #999;
+  font-size: 12px;
+}
+
+@media (width < 768px) {
+  footer > div:first-child {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  footer > div:last-child {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 }
