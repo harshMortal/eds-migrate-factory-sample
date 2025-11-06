@@ -1,41 +1,32 @@
-/* blocks/accordion/accordion.js */
-/**
- * Accordion block decoration
- * Handles click events and active state management
- */
 export default function decorate(block) {
-  const items = block.querySelectorAll(':scope > div');
+  const container = block.querySelector(':scope > div');
+  if (!container) return;
 
-  items.forEach((item, index) => {
-    const header = item.querySelector('.accordion-header');
+  const children = Array.from(container.children);
+  
+  for (let i = 0; i < children.length; i += 2) {
+    const header = children[i];
+    const content = children[i + 1];
     
-    if (!header) {
-      // Fallback for different structure
-      const firstDiv = item.querySelector(':scope > div:first-child');
-      if (firstDiv) {
-        firstDiv.classList.add('accordion-header');
-        firstDiv.addEventListener('click', () => toggleItem(item, items));
+    if (header && content) {
+      header.addEventListener('click', () => {
+        const isActive = header.classList.contains('active');
+        
+        // Close all
+        children.forEach(child => child.classList.remove('active'));
+        
+        // Open clicked if it wasn't active
+        if (!isActive) {
+          header.classList.add('active');
+          content.classList.add('active');
+        }
+      });
+      
+      // Open first by default
+      if (i === 0) {
+        header.classList.add('active');
+        content.classList.add('active');
       }
-      return;
     }
-
-    header.addEventListener('click', () => toggleItem(item, items));
-
-    // Open first item by default
-    if (index === 0) {
-      item.classList.add('active');
-    }
-  });
-}
-
-function toggleItem(item, allItems) {
-  const wasActive = item.classList.contains('active');
-
-  // Close all items
-  allItems.forEach((i) => i.classList.remove('active'));
-
-  // Open clicked item if it wasn't active
-  if (!wasActive) {
-    item.classList.add('active');
   }
 }
