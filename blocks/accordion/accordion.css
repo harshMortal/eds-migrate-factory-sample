@@ -1,29 +1,44 @@
 /* blocks/accordion/accordion.css */
+.accordion {
+  background: #fff;
+  padding: 60px 20px;
+}
+
 .accordion > div {
   max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .accordion > div > div:nth-child(odd) {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 20px;
   padding: 24px;
   background: #f8f8f8;
   border: 2px solid #e0e0e0;
   border-radius: 8px 8px 0 0;
   cursor: pointer;
   position: relative;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.accordion > div > div:nth-child(odd):hover {
+  background: #efefef;
+}
+
+.accordion > div > div:nth-child(odd):first-child {
+  margin-top: 0;
 }
 
 .accordion > div > div:nth-child(odd)::after {
   content: '+';
   position: absolute;
   right: 24px;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   color: #ff6b35;
+  line-height: 1;
   transition: transform 0.3s;
 }
 
@@ -35,11 +50,13 @@
 .accordion > div > div:nth-child(odd) img {
   width: 60px;
   height: 60px;
+  object-fit: contain;
 }
 
 .accordion > div > div:nth-child(odd) strong {
   font-size: 20px;
   color: #333;
+  flex: 1;
 }
 
 .accordion > div > div:nth-child(even) {
@@ -49,15 +66,33 @@
   border: 2px solid #e0e0e0;
   border-top: none;
   border-radius: 0 0 8px 8px;
+  background: white;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
 .accordion > div > div:nth-child(even).active {
-  max-height: 500px;
+  max-height: 800px;
   padding: 24px;
 }
 
+.accordion > div > div:nth-child(even) p {
+  margin: 0;
+  line-height: 1.6;
+  color: #666;
+}
+
 @media (width < 768px) {
-  .accordion > div > div:nth-child(odd) { padding: 16px; }
-  .accordion > div > div:nth-child(odd) img { width: 40px; height: 40px; }
+  .accordion > div > div:nth-child(odd) {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .accordion > div > div:nth-child(odd) img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion > div > div:nth-child(odd) strong {
+    font-size: 16px;
+  }
 }
