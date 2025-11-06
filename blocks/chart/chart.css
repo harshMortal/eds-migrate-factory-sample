@@ -27,13 +27,3 @@
   color: #666;
   font-style: italic;
 }
-
-@media (width < 768px) {
-  .chart {
-    margin: 40px auto;
-  }
-
-  .chart h2 {
-    font-size: 22px;
-  }
-}
