@@ -1,5 +1,15 @@
 /* blocks/data-table/data-table.css */
 .data-table {
+  --table-header-bg: #2c5f7c;
+  --table-header-hover-bg: #1a3a4d;
+  --table-bg: #fff;
+  --table-alt-row-bg: #f8f8f8;
+  --table-hover-bg: #fff3ef;
+  --table-border-color: #e0e0e0;
+  --table-text-color: #333;
+  --table-accent-color: #ff6b35;
+  --table-focus-ring: #ff6b35;
+
   max-width: 1200px;
   margin: 40px auto;
   padding: 0 20px;
@@ -9,14 +19,14 @@
 .data-table table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: var(--table-bg);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
 }
 
 .data-table th {
-  background: #2c5f7c;
+  background: var(--table-header-bg);
   color: white;
   padding: 16px;
   text-align: left;
@@ -26,38 +36,50 @@
   cursor: pointer;
   user-select: none;
   position: relative;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .data-table th:hover {
-  background: #1a3a4d;
+  background: var(--table-header-hover-bg);
+}
+
+.data-table th:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px var(--table-focus-ring);
 }
 
 .data-table th.sortable::after {
-  content: ' ↕';
+  content: ' \2195';
   opacity: 0.5;
   margin-left: 8px;
 }
 
 .data-table th.sorted-asc::after {
-  content: ' ↑';
+  content: ' \2191';
   opacity: 1;
 }
 
 .data-table th.sorted-desc::after {
-  content: ' ↓';
+  content: ' \2193';
   opacity: 1;
 }
 
 .data-table td {
   padding: 16px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--table-border-color);
   font-size: 14px;
-  color: #333;
+  color: var(--table-text-color);
+}
+
+/* Highlight accent column (e.g., QULIPTA data) */
+.data-table th:nth-child(3),
+.data-table td:nth-child(3) {
+  color: var(--table-accent-color);
+  font-weight: bold;
 }
 
 .data-table tbody tr:nth-child(odd) {
-  background: #f8f8f8;
+  background: var(--table-alt-row-bg);
 }
 
 .data-table tbody tr:last-child td {
@@ -65,14 +87,16 @@
 }
 
 .data-table tbody tr:hover {
-  background: #fff3ef;
+  background: var(--table-hover-bg);
 }
 
-/* Qulipta specific styling */
-.data-table th:nth-child(3),
-.data-table td:nth-child(3) {
-  color: #ff6b35;
-  font-weight: bold;
+.data-table th:nth-child(3) {
+  color: white;
+  background: var(--table-accent-color);
+}
+
+.data-table th:nth-child(3):hover {
+  background: #e55a28;
 }
 
 @media (width < 768px) {

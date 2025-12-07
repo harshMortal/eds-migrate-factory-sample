@@ -12,6 +12,7 @@ footer > div {
 
 footer > div:first-child {
   display: grid;
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
   grid-template-columns: 1.5fr repeat(auto-fit, minmax(200px, 1fr));
   gap: 40px;
   padding-bottom: 40px;
