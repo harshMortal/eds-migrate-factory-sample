@@ -1,8 +1,14 @@
 /* blocks/hero/hero.css */
 .hero {
+  --hero-bg-start: #2c5f7c;
+  --hero-bg-end: #1a3a4d;
+  --hero-overlay: rgb(0 0 0 / 30%);
+  --hero-text-color: #fff;
+  --hero-accent-color: #ff6b35;
+
   position: relative;
   padding: 120px 20px 80px;
-  background: linear-gradient(135deg, #2c5f7c 0%, #1a3a4d 100%);
+  background: linear-gradient(135deg, var(--hero-bg-start) 0%, var(--hero-bg-end) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,17 +17,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--hero-text-color);
 }
 
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgb(0 0 0 / 30%);
+  inset: 0;
+  background: var(--hero-overlay);
   z-index: 0;
 }
 
@@ -33,20 +36,27 @@
 }
 
 .hero h1 {
-  color: #fff;
+  color: var(--hero-text-color);
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: 'Expressway', 'Helvetica Neue', helvetica, arial, sans-serif;
+  font-family: Expressway, "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-.hero .subtitle {
-  color: #ff6b35;
+.hero .subtitle,
+.hero p:first-of-type {
+  color: var(--hero-accent-color);
   font-size: 24px;
   line-height: 1.4;
   font-weight: bold;
   margin: 0;
+}
+
+/* Focus styles for any interactive elements in hero */
+.hero a:focus-visible {
+  outline: 3px solid var(--hero-accent-color);
+  outline-offset: 2px;
 }
 
 @media (width < 768px) {
@@ -59,7 +69,8 @@
     font-size: 32px;
   }
 
-  .hero .subtitle {
+  .hero .subtitle,
+  .hero p:first-of-type {
     font-size: 18px;
   }
 }

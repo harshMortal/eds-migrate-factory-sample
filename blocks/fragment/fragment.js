@@ -4,14 +4,8 @@
  * https://www.aem.live/developer/block-collection/fragment
  */
 
-// eslint-disable-next-line import/no-cycle
-import {
-  decorateMain,
-} from '../../scripts/scripts.js';
-
-import {
-  loadSections,
-} from '../../scripts/aem.js';
+import { decorateMain } from '../../scripts/scripts.js';
+import { loadSections } from '../../scripts/aem.js';
 
 /**
  * Loads a fragment.
