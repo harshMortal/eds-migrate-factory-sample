@@ -1,0 +1,20 @@
+{
+  "id": "container",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "interactionId",
+      "label": "Interaction Id"
+    }
+  ]
+}

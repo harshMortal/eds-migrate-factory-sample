@@ -1,0 +1,55 @@
+{
+  "id": "aemform",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "formType",
+      "label": "Form Type"
+    },
+    {
+      "component": "text",
+      "name": "thankyouConfig",
+      "label": "Thankyou Config"
+    },
+    {
+      "component": "text",
+      "name": "enableFocusOnFirstField",
+      "label": "Enable Focus On First Field"
+    },
+    {
+      "component": "text",
+      "name": "formRef",
+      "label": "Form Ref"
+    },
+    {
+      "component": "text",
+      "name": "submitType",
+      "label": "Submit Type"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    },
+    {
+      "component": "text",
+      "name": "thankyouMessage",
+      "label": "Thankyou Message"
+    },
+    {
+      "component": "boolean",
+      "name": "useiframe",
+      "label": "Useiframe"
+    }
+  ]
+}

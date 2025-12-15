@@ -1,0 +1,85 @@
+{
+  "id": "background-container",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "backgroundType",
+      "label": "Background Type"
+    },
+    {
+      "component": "text",
+      "name": "bgColor",
+      "label": "Bg Color"
+    },
+    {
+      "component": "text",
+      "name": "containerWidth",
+      "label": "Container Width"
+    },
+    {
+      "component": "text",
+      "name": "contentposition",
+      "label": "Contentposition"
+    },
+    {
+      "component": "richtext",
+      "name": "description",
+      "label": "Description"
+    },
+    {
+      "component": "text",
+      "name": "gradientColor",
+      "label": "Gradient Color"
+    },
+    {
+      "component": "reference",
+      "name": "imageType",
+      "label": "Image Type"
+    },
+    {
+      "component": "reference",
+      "name": "linkIcon",
+      "label": "Link Icon"
+    },
+    {
+      "component": "reference",
+      "name": "linkType",
+      "label": "Link Type"
+    },
+    {
+      "component": "boolean",
+      "name": "parallaxEffect",
+      "label": "Parallax Effect"
+    },
+    {
+      "component": "text",
+      "name": "targetType",
+      "label": "Target Type"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    },
+    {
+      "component": "text",
+      "name": "textPanelColor",
+      "label": "Text Panel Color"
+    },
+    {
+      "component": "number",
+      "name": "transparency",
+      "label": "Transparency"
+    }
+  ]
+}

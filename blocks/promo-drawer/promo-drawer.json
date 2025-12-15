@@ -1,0 +1,60 @@
+{
+  "id": "promo-drawer",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "closeIcon",
+      "label": "Close Icon"
+    },
+    {
+      "component": "boolean",
+      "name": "hideonceSeenbyUser",
+      "label": "Hideonce Seenby User"
+    },
+    {
+      "component": "text",
+      "name": "interactionId",
+      "label": "Interaction Id"
+    },
+    {
+      "component": "text",
+      "name": "labelIcon",
+      "label": "Label Icon"
+    },
+    {
+      "component": "text",
+      "name": "labelIconPosition",
+      "label": "Label Icon Position"
+    },
+    {
+      "component": "richtext",
+      "name": "promoDescription",
+      "label": "Promo Description"
+    },
+    {
+      "component": "text",
+      "name": "promoLabel",
+      "label": "Promo Label"
+    },
+    {
+      "component": "boolean",
+      "name": "showParsys",
+      "label": "Show Parsys"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    }
+  ]
+}

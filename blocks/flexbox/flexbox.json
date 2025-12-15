@@ -1,0 +1,55 @@
+{
+  "id": "flexbox",
+  "fields": [
+    {
+      "component": "container",
+      "name": "flexitem0",
+      "label": "Flexitem0"
+    },
+    {
+      "component": "container",
+      "name": "flexitem1",
+      "label": "Flexitem1"
+    },
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "alignContent",
+      "label": "Align Content"
+    },
+    {
+      "component": "text",
+      "name": "alignItems",
+      "label": "Align Items"
+    },
+    {
+      "component": "text",
+      "name": "flexDirection",
+      "label": "Flex Direction"
+    },
+    {
+      "component": "number",
+      "name": "flexItemsNumber",
+      "label": "Flex Items Number"
+    },
+    {
+      "component": "text",
+      "name": "flexWrap",
+      "label": "Flex Wrap"
+    },
+    {
+      "component": "text",
+      "name": "justifyContent",
+      "label": "Justify Content"
+    }
+  ]
+}

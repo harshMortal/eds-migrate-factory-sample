@@ -1,0 +1,35 @@
+{
+  "id": "contentboxcontainer",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "bgColor",
+      "label": "Bg Color"
+    },
+    {
+      "component": "text",
+      "name": "borderStyle",
+      "label": "Border Style"
+    },
+    {
+      "component": "richtext",
+      "name": "containerTitle",
+      "label": "Container Title"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    }
+  ]
+}

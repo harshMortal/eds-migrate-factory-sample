@@ -1,0 +1,90 @@
+{
+  "id": "safety-bar",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "anchorID",
+      "label": "Anchor I D"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedBy",
+      "label": "Ats Last Modified By"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedOn",
+      "label": "Ats Last Modified On"
+    },
+    {
+      "component": "text",
+      "name": "backToTopInteractionId",
+      "label": "Back To Top Interaction Id"
+    },
+    {
+      "component": "boolean",
+      "name": "changed",
+      "label": "Changed"
+    },
+    {
+      "component": "richtext",
+      "name": "col1TextDockedLessDesktop",
+      "label": "Col1 Text Docked Less Desktop"
+    },
+    {
+      "component": "richtext",
+      "name": "col1TextDockedLessMobile",
+      "label": "Col1 Text Docked Less Mobile"
+    },
+    {
+      "component": "richtext",
+      "name": "col1TextDockedMoreDesktop",
+      "label": "Col1 Text Docked More Desktop"
+    },
+    {
+      "component": "richtext",
+      "name": "col1TextDockedMoreMobile",
+      "label": "Col1 Text Docked More Mobile"
+    },
+    {
+      "component": "richtext",
+      "name": "col2TextDockedLessDesktop",
+      "label": "Col2 Text Docked Less Desktop"
+    },
+    {
+      "component": "richtext",
+      "name": "col2TextDockedMoreDesktop",
+      "label": "Col2 Text Docked More Desktop"
+    },
+    {
+      "component": "text",
+      "name": "interactionId",
+      "label": "Interaction Id"
+    },
+    {
+      "component": "text",
+      "name": "layoutDocked",
+      "label": "Layout Docked"
+    },
+    {
+      "component": "text",
+      "name": "pageInteractionId",
+      "label": "Page Interaction Id"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "id": "header-v2",
+  "fields": [
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "anchorID",
+      "label": "Anchor I D"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedBy",
+      "label": "Ats Last Modified By"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedOn",
+      "label": "Ats Last Modified On"
+    },
+    {
+      "component": "text",
+      "name": "backToTopInteractionId",
+      "label": "Back To Top Interaction Id"
+    },
+    {
+      "component": "text",
+      "name": "customCssClasses",
+      "label": "Custom Css Classes"
+    },
+    {
+      "component": "reference",
+      "name": "eyebrowLinks",
+      "label": "Eyebrow Links"
+    },
+    {
+      "component": "text",
+      "name": "floatingisidesktop",
+      "label": "Floatingisidesktop"
+    },
+    {
+      "component": "text",
+      "name": "floatingisimobile",
+      "label": "Floatingisimobile"
+    },
+    {
+      "component": "richtext",
+      "name": "floatingisitext",
+      "label": "Floatingisitext"
+    },
+    {
+      "component": "text",
+      "name": "headerType",
+      "label": "Header Type"
+    },
+    {
+      "component": "text",
+      "name": "l10Title",
+      "label": "L10 Title"
+    },
+    {
+      "component": "reference",
+      "name": "loginCloseLinkIcon",
+      "label": "Login Close Link Icon"
+    },
+    {
+      "component": "text",
+      "name": "loginL10Title",
+      "label": "Login L10 Title"
+    },
+    {
+      "component": "reference",
+      "name": "loginOpenLinkIcon",
+      "label": "Login Open Link Icon"
+    },
+    {
+      "component": "text",
+      "name": "loginSectionTitle",
+      "label": "Login Section Title"
+    },
+    {
+      "component": "reference",
+      "name": "logoutCloseLinkIcon",
+      "label": "Logout Close Link Icon"
+    },
+    {
+      "component": "reference",
+      "name": "logoutOpenLinkIcon",
+      "label": "Logout Open Link Icon"
+    },
+    {
+      "component": "text",
+      "name": "pageInteractionId",
+      "label": "Page Interaction Id"
+    },
+    {
+      "component": "number",
+      "name": "primaryNavMenuItems",
+      "label": "Primary Nav Menu Items"
+    },
+    {
+      "component": "text",
+      "name": "sectionTitle",
+      "label": "Section Title"
+    },
+    {
+      "component": "text",
+      "name": "skipToMainContent",
+      "label": "Skip To Main Content"
+    },
+    {
+      "component": "text",
+      "name": "stickyScrollType",
+      "label": "Sticky Scroll Type"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    },
+    {
+      "component": "number",
+      "name": "utilityNavMenuItems",
+      "label": "Utility Nav Menu Items"
+    },
+    {
+      "component": "text",
+      "name": "welcomeText",
+      "label": "Welcome Text"
+    }
+  ]
+}

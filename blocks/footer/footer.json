@@ -1,0 +1,110 @@
+{
+  "id": "footer",
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image1",
+      "label": "Image1"
+    },
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "analyticsEnableMVATier",
+      "label": "Analytics Enable M V A Tier"
+    },
+    {
+      "component": "text",
+      "name": "analyticsMVAType",
+      "label": "Analytics M V A Type"
+    },
+    {
+      "component": "text",
+      "name": "analyticsTitleLogo",
+      "label": "Analytics Title Logo"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedBy",
+      "label": "Ats Last Modified By"
+    },
+    {
+      "component": "text",
+      "name": "atsLastModifiedOn",
+      "label": "Ats Last Modified On"
+    },
+    {
+      "component": "text",
+      "name": "backToTopInteractionId",
+      "label": "Back To Top Interaction Id"
+    },
+    {
+      "component": "text",
+      "name": "footerlayout",
+      "label": "Footerlayout"
+    },
+    {
+      "component": "text",
+      "name": "interactionID",
+      "label": "Interaction I D"
+    },
+    {
+      "component": "reference",
+      "name": "linkMvaTitle",
+      "label": "Link Mva Title"
+    },
+    {
+      "component": "text",
+      "name": "logoL10Title",
+      "label": "Logo L10 Title"
+    },
+    {
+      "component": "reference",
+      "name": "logolinkbehaviour",
+      "label": "Logolinkbehaviour"
+    },
+    {
+      "component": "reference",
+      "name": "logolinkurl",
+      "label": "Logolinkurl"
+    },
+    {
+      "component": "text",
+      "name": "logoSectionTitle",
+      "label": "Logo Section Title"
+    },
+    {
+      "component": "text",
+      "name": "logotitle",
+      "label": "Logotitle"
+    },
+    {
+      "component": "text",
+      "name": "outerFieldset",
+      "label": "Outer Fieldset"
+    },
+    {
+      "component": "text",
+      "name": "pageInteractionId",
+      "label": "Page Interaction Id"
+    },
+    {
+      "component": "text",
+      "name": "secondaryMVA",
+      "label": "Secondary M V A"
+    },
+    {
+      "component": "richtext",
+      "name": "textIsRich",
+      "label": "Text Is Rich"
+    }
+  ]
+}

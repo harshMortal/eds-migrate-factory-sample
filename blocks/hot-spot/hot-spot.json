@@ -1,0 +1,25 @@
+{
+  "id": "hot-spot",
+  "fields": [
+    {
+      "component": "reference",
+      "name": "imageref",
+      "label": "Imageref"
+    },
+    {
+      "component": "text",
+      "name": "jcr:primaryType",
+      "label": "Jcr:Primary Type"
+    },
+    {
+      "component": "text",
+      "name": "sling:resourceType",
+      "label": "Sling:Resource Type"
+    },
+    {
+      "component": "text",
+      "name": "hotSpots",
+      "label": "Hot Spots"
+    }
+  ]
+}
