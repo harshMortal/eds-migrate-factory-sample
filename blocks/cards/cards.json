@@ -1,0 +1,10 @@
+{
+  "id": "cards",
+  "fields": [
+    {
+      "component": "container",
+      "name": "items",
+      "label": "Card Items"
+    }
+  ]
+}

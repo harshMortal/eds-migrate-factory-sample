@@ -1,0 +1,10 @@
+{
+  "id": "tabs",
+  "fields": [
+    {
+      "component": "container",
+      "name": "tabs",
+      "label": "Tab Items"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hero",
+  "fields": [
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Title",
+      "required": true
+    },
+    {
+      "component": "richtext",
+      "name": "description",
+      "label": "Description"
+    },
+    {
+      "component": "reference",
+      "name": "image",
+      "label": "Background Image",
+      "valueType": "image"
+    },
+    {
+      "component": "text",
+      "name": "ctaText",
+      "label": "CTA Text"
+    },
+    {
+      "component": "text",
+      "name": "ctaLink",
+      "label": "CTA Link"
+    }
+  ]
+}

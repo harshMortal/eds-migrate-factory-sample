@@ -1,0 +1,10 @@
+{
+  "id": "carousel",
+  "fields": [
+    {
+      "component": "container",
+      "name": "slides",
+      "label": "Slides"
+    }
+  ]
+}

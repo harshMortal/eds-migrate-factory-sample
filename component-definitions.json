@@ -1,0 +1,63 @@
+{
+  "groups": [
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Hero",
+          "id": "hero",
+          "model": "hero"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "model": "cards"
+        },
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "model": "accordion"
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "model": "tabs"
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "model": "carousel"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "id": "layout",
+      "components": [
+        {
+          "title": "Columns",
+          "id": "columns",
+          "model": "columns"
+        }
+      ]
+    },
+    {
+      "title": "Content",
+      "id": "content",
+      "components": [
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "model": "fragment"
+        }
+      ]
+    }
+  ]
+}

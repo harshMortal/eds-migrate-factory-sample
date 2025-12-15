@@ -1,0 +1,11 @@
+{
+  "id": "fragment",
+  "fields": [
+    {
+      "component": "reference",
+      "name": "reference",
+      "label": "Content Fragment",
+      "required": true
+    }
+  ]
+}

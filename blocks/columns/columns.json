@@ -1,0 +1,10 @@
+{
+  "id": "columns",
+  "fields": [
+    {
+      "component": "container",
+      "name": "columns",
+      "label": "Columns"
+    }
+  ]
+}
