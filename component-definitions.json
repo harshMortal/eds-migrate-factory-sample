@@ -8,6 +8,11 @@
           "title": "Hero",
           "id": "hero",
           "model": "hero"
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "model": "hero"
         }
       ]
     },
@@ -15,6 +20,26 @@
       "title": "Blocks",
       "id": "blocks",
       "components": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "model": "cards"
+        },
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "model": "accordion"
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "model": "tabs"
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "model": "carousel"
+        },
         {
           "title": "Cards",
           "id": "cards",
@@ -60,6 +85,11 @@
           "title": "Columns",
           "id": "columns",
           "model": "columns"
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "model": "columns"
         }
       ]
     },
@@ -67,6 +97,11 @@
       "title": "Media",
       "id": "media",
       "components": [
+        {
+          "title": "Embed",
+          "id": "embed",
+          "model": "embed"
+        },
         {
           "title": "Embed",
           "id": "embed",
@@ -92,6 +127,11 @@
           "title": "Fragment",
           "id": "fragment",
           "model": "fragment"
+        },
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "model": "fragment"
         }
       ]
     },
@@ -99,6 +139,81 @@
       "title": "Custom",
       "id": "custom",
       "components": [
+        {
+          "title": "Iparsys",
+          "id": "iparsys",
+          "model": "iparsys"
+        },
+        {
+          "title": "Footer",
+          "id": "footer",
+          "model": "footer"
+        },
+        {
+          "title": "Safety Bar",
+          "id": "safety-bar",
+          "model": "safety-bar"
+        },
+        {
+          "title": "Header V2",
+          "id": "header-v2",
+          "model": "header-v2"
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "model": "image"
+        },
+        {
+          "title": "Text",
+          "id": "text",
+          "model": "text"
+        },
+        {
+          "title": "Contentboxcontainer",
+          "id": "contentboxcontainer",
+          "model": "contentboxcontainer"
+        },
+        {
+          "title": "Aemform",
+          "id": "aemform",
+          "model": "aemform"
+        },
+        {
+          "title": "Breadcrumb",
+          "id": "breadcrumb",
+          "model": "breadcrumb"
+        },
+        {
+          "title": "Hot Spot",
+          "id": "hot-spot",
+          "model": "hot-spot"
+        },
+        {
+          "title": "Background Container",
+          "id": "background-container",
+          "model": "background-container"
+        },
+        {
+          "title": "Container",
+          "id": "container",
+          "model": "container"
+        },
+        {
+          "title": "Flexbox",
+          "id": "flexbox",
+          "model": "flexbox"
+        },
+        {
+          "title": "Sticky Sidebar",
+          "id": "sticky-sidebar",
+          "model": "sticky-sidebar"
+        },
+        {
+          "title": "Promo Drawer",
+          "id": "promo-drawer",
+          "model": "promo-drawer"
+        },
         {
           "title": "Iparsys",
           "id": "iparsys",

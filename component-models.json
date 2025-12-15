@@ -15,6 +15,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Hero",
+          "id": "hero",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/hero/v1/hero",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     },
@@ -22,6 +34,54 @@
       "title": "Blocks",
       "id": "blocks",
       "components": [
+        {
+          "title": "Cards",
+          "id": "cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/cards/v1/cards",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion",
+          "id": "accordion",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/accordion/v1/accordion",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/tabs/v1/tabs",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel",
+          "id": "carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/carousel/v1/carousel",
+                "template": {}
+              }
+            }
+          }
+        },
         {
           "title": "Cards",
           "id": "cards",
@@ -123,6 +183,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Columns",
+          "id": "columns",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     },
@@ -130,6 +202,18 @@
       "title": "Media",
       "id": "media",
       "components": [
+        {
+          "title": "Embed",
+          "id": "embed",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/embed/v1/embed",
+                "template": {}
+              }
+            }
+          }
+        },
         {
           "title": "Embed",
           "id": "embed",
@@ -183,6 +267,18 @@
               }
             }
           }
+        },
+        {
+          "title": "Fragment",
+          "id": "fragment",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/fragment/v1/fragment",
+                "template": {}
+              }
+            }
+          }
         }
       ]
     },
@@ -190,6 +286,186 @@
       "title": "Custom",
       "id": "custom",
       "components": [
+        {
+          "title": "Iparsys",
+          "id": "iparsys",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/iparsys/v1/iparsys",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Footer",
+          "id": "footer",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/footer/v1/footer",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Safety Bar",
+          "id": "safety-bar",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/safety-bar/v1/safety-bar",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Header V2",
+          "id": "header-v2",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/header-v2/v1/header-v2",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/image/v1/image",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/text/v1/text",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Contentboxcontainer",
+          "id": "contentboxcontainer",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/contentboxcontainer/v1/contentboxcontainer",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Aemform",
+          "id": "aemform",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/aemform/v1/aemform",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Breadcrumb",
+          "id": "breadcrumb",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/breadcrumb/v1/breadcrumb",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Hot Spot",
+          "id": "hot-spot",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/hot-spot/v1/hot-spot",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Background Container",
+          "id": "background-container",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/background-container/v1/background-container",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Container",
+          "id": "container",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/container/v1/container",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Flexbox",
+          "id": "flexbox",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/flexbox/v1/flexbox",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Sticky Sidebar",
+          "id": "sticky-sidebar",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/sticky-sidebar/v1/sticky-sidebar",
+                "template": {}
+              }
+            }
+          }
+        },
+        {
+          "title": "Promo Drawer",
+          "id": "promo-drawer",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/promo-drawer/v1/promo-drawer",
+                "template": {}
+              }
+            }
+          }
+        },
         {
           "title": "Iparsys",
           "id": "iparsys",
