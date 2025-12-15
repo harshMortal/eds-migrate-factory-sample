@@ -49,6 +49,17 @@
       ]
     },
     {
+      "title": "Media",
+      "id": "media",
+      "components": [
+        {
+          "title": "Embed",
+          "id": "embed",
+          "model": "embed"
+        }
+      ]
+    },
+    {
       "title": "Content",
       "id": "content",
       "components": [

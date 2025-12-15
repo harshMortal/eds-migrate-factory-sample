@@ -1,0 +1,11 @@
+{
+  "id": "embed",
+  "fields": [
+    {
+      "component": "text",
+      "name": "url",
+      "label": "Embed URL",
+      "required": true
+    }
+  ]
+}
