@@ -141,18 +141,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Carousel",
-          "id": "carousel",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/carousel/v1/carousel",
-                "template": {}
-              }
-            }
-          }
         }
       ]
     },
@@ -183,18 +171,6 @@
               }
             }
           }
-        },
-        {
-          "title": "Columns",
-          "id": "columns",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/columns/v1/columns",
-                "template": {}
-              }
-            }
-          }
         }
       ]
     },
@@ -202,30 +178,6 @@
       "title": "Media",
       "id": "media",
       "components": [
-        {
-          "title": "Embed",
-          "id": "embed",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/embed/v1/embed",
-                "template": {}
-              }
-            }
-          }
-        },
-        {
-          "title": "Embed",
-          "id": "embed",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/embed/v1/embed",
-                "template": {}
-              }
-            }
-          }
-        },
         {
           "title": "Embed",
           "id": "embed",

@@ -64,11 +64,6 @@
           "title": "Carousel",
           "id": "carousel",
           "model": "carousel"
-        },
-        {
-          "title": "Carousel",
-          "id": "carousel",
-          "model": "carousel"
         }
       ]
     },
@@ -85,11 +80,6 @@
           "title": "Columns",
           "id": "columns",
           "model": "columns"
-        },
-        {
-          "title": "Columns",
-          "id": "columns",
-          "model": "columns"
         }
       ]
     },
@@ -97,16 +87,6 @@
       "title": "Media",
       "id": "media",
       "components": [
-        {
-          "title": "Embed",
-          "id": "embed",
-          "model": "embed"
-        },
-        {
-          "title": "Embed",
-          "id": "embed",
-          "model": "embed"
-        },
         {
           "title": "Embed",
           "id": "embed",
